@@ -1,0 +1,6 @@
+h1- biggest header tah in html
+@app.route('/about/<username>')
+def about_page(username:str):
+    return f'<h1> This is the about page of {username}</h1>'
+
+render_template()-:can accept request and direct it to the prefer html file

@@ -1,0 +1,11 @@
+C:\Users\Dwaipayan\anaconda3
+set PATH=C:\Users\Dwaipayan\anaconda3\Scripts
+flask default port 5000
+if you disable debug mode , there is no need to restart server eevry time to display changes
+set FLASK_DEBUG=1
+
+class Item(db.Model): by defining db.model under class Item, its telling flask application that Item is a module that going to be table inside the database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///market.db'
+URI=Unified resource identifier
+items = db.relationship('Item',backref='owned_user',lazy=True)- backref allows us to back refrence of the person who owns the item
+and making lazy is =True it tells sqlalchemy to fetch all the items at once
